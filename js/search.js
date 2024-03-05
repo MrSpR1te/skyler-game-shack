@@ -1,27 +1,16 @@
-  document.getElementById('searchForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const query = document.getElementById('searchInput').value.toLowerCase();
-    const links = document.getElementsByClassName('search-results')[0].getElementsByTagName('a');
-    let foundResults = false;
+// Listen for input event on the search input field
+document.getElementById('gameSearch').addEventListener('input', function() {
+    var searchQuery = this.value.trim().toLowerCase(); // Get search query and convert to lowercase
+    var gameBoxes = document.querySelectorAll('.game-box'); // Get all game boxes
 
-    for (let i = 0; i < links.length; i++) {
-      const link = links[i];
-      const linkText = link.innerText.toLowerCase();
-
-      if (linkText.includes(query)) {
-        link.style.display = 'block';
-        foundResults = true;
-      } else {
-        link.style.display = 'none';
-      }
-    }
-
-    if (!foundResults) {
-      const message = document.getElementById('searchMessage');
-      message.innerText = 'No results found.';
-      message.style.display = 'block';
-    } else {
-      const message = document.getElementById('searchMessage');
-      message.style.display = 'none';
-    }
-  });
+    // Iterate through each game box
+    gameBoxes.forEach(function(box) {
+        var gameName = box.querySelector('.game-text').textContent.toLowerCase(); // Get game name associated with the box and convert to lowercase
+        // If the game name includes the search query, show the box; otherwise, hide it
+        if (gameName.includes(searchQuery)) {
+            box.style.display = 'block';
+        } else {
+            box.style.display = 'none';
+        }
+    });
+});
