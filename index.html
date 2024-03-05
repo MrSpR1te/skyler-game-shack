@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VHVNHMYGN3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VHVNHMYGN3');
-</script>
-  <script async src="https://arc.io/widget.min.js#L1SfLEWE"></script>
-  <title>Redirect Page</title>
-  <script>
-    window.onload = function() {
-      window.location.href = "iframe.html"; 
-    };
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Notepad</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <h1>Redirecting...</h1>
-  <p>If you are not redirected, <a href="iframe.html">click here</a>.</p>
+
+<nav>
+    <button id="saveButton">Save as Text File</button>
+</nav>
+
+<textarea id="editor"></textarea>
+
+<footer>
+    <p>&copy; 2024 Skylers Note Pad.</p>
+</footer>
+
+<script src="js/save.js"></script>
+
 </body>
 </html>
