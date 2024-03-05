@@ -1,0 +1,110 @@
+<html><head>
+<meta charset="utf-8">
+<title>Roblox</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="description" content="Roblox is a massively popular online gaming platform that allows users to create and play games created by other users. With a wide variety of game genres, Roblox has something for everyone, from fast-paced action games to role-playing games and more. The platform is home to a vibrant and active community of players and developers, making it one of the most engaging and dynamic gaming experiences available online. With its user-friendly interface, Roblox is easy to navigate and offers endless hours of entertainment for players of all ages. Whether youre looking for a new gaming experience or want to create your own games, Roblox is a perfect choice. Create your account for free and join the fun today! If you enjoyed this game visit Minecraft.
+
+When was Roblox made? 
+Roblox is released on September 1, 2006.
+
+Why game is not working? 
+Roblox is region blocked in some countries.
+
+
+
+
+
+">
+<link rel="stylesheet" type="text/css" href="https://www.gamenora.com/content/themes/arcade-one/css/style.css">
+<style type="text/css">
+						body {
+						    color: #eee;
+						    position: inherit;
+						    margin: 0;
+						    padding: 0;
+						    overflow: hidden;
+						    height: 100%;
+						    background: #000;
+						}
+						#splash-game-content {
+						    position: absolute;
+						    top: 0;
+						    left: 0;
+						    width: 0;
+						    height: 0;
+						    overflow: hidden;
+						    max-width: 100%;
+						    max-height: 100%;
+						    min-width: 100%;
+						    min-height: 100%;
+						    box-sizing: border-box;
+						}
+						.splash {
+						    background: linear-gradient(-45deg,#7887db,#e86195);
+						    position: absolute;
+							top: 0;
+							left: 0;
+							bottom: 0;
+							width: 100%;
+							z-index: 1;
+						}
+						.splash-content {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							z-index: 2;
+							transform: translate(-50%, -50%);
+						}
+						.splash-content img {
+							width: 180px;
+							height: auto;
+							border: 2px solid #fff;
+							border-radius: 8px;
+						}
+						.btn-play {
+							width: 184px;
+							height: 60px;
+							font-size: 20px;
+							font-weight: bold;
+							margin-top: 15px;
+							background: rgba(255, 255, 255, 0.8);
+							border: none;
+							border-radius: 40px;
+						}
+						.btn-play:hover {
+							cursor: pointer;
+						}
+						.splash-game-title {
+							position: absolute;
+							top: 95%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							font-size: 20px;
+						}
+					</style>
+</head>
+<body>
+<div class="splash" id="splash">
+<div class="splash-content">
+<div class="splash-thumbnail">
+<img src="https://www.gamenora.com/upload/games/thumbnails/Roblox.webp">
+</div>
+<button class="btn-play" onclick="play_game()">Play</button>
+</div>
+<div class="splash-game-title">Roblox</div>
+</div>
+<iframe id="splash-game-content" frameborder="0" allow="autoplay" allowfullscreen="" seamless="" scrolling="no" data-src="https://now.gg/iframe/snippet?app_pkg=com.roblox.client&amp;partner=gamenora"></iframe>
+<script type="text/javascript">
+						// previously on head <script type="text/javascript" src="/js/api.js"><\/script>
+						function play_game(){
+							document.getElementById("splash").remove();
+							// show_ad_on_splash temporary disable for new Ads Manager plugin
+														document.getElementById("splash-game-content").src = document.getElementById("splash-game-content").dataset.src;
+						}
+						// ca_api.on_ad_closed = ()=>{
+						// 	//
+						// }
+					</script>
+
+
+</body></html>
