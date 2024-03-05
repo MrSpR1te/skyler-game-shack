@@ -200,3 +200,12 @@ section p {
   font-size: 1.4rem;
   color: #e0e0e0;
 }
+
+::-webkit-scrollbar-thumb {
+    background: #0084ff;
+    border-radius: 50px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0084ff;
+  }
