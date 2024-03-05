@@ -210,6 +210,24 @@ section p {
     background: #0084ff;
   }
 
+::-webkit-scrollbar {
+    width: 7px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #666666;
+    border-radius: 50px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #0084ff;
+    border-radius: 50px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0084ff;
+  }
+
 /* Style for the search bar */
 #gameSearch {
   width: 80%; /* Adjust the width as needed */
